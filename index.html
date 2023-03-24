@@ -1,107 +1,111 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Play List</title>
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the header */
-  header {
-    background-color: #e6d626;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: rgb(87, 39, 150);
-  } 
-  
-  /* Create two columns/boxes that floats next to each other */
-  nav {
+<html>
+    <head>
+        <title>BEAUTY OF NATURE</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    background-image:url(../eden.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+
+}
+ul{
     float: right;
-    width: 20%;
-    height: 1400px; /* only for demonstration, should be removed */
-    background: #7c0f6d;
-    padding: 30px;
-    border:10px solid white;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
     list-style-type: none;
-    padding: 20;
-  }
-  
-  article {
-    float: left;
-    padding: 30px;
-    width: 80%;
-    background-color: #a05e5e;
-    height: 1400px; /* only for demonstration, should be removed */
-  } 
-  
-  /* Clear floats after the columns */
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  
-      </style>
-      </head>
-   
-     <body>
-      <header>
-          <h2>MY PLAY LIST</h2>
+     margin-top: 25px ;
+}
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #640404;
+    padding: 5px 20px;
+    border: 1px solid black;
+    transition: 0.6s ease;
+    
+
+}
+
+ul li a:hover{
+    background-color: #15ad61;
+    color: #000;
+}
+ul li.active a{
+background-color: #fff;
+color: #000;
+}
+.logo img{
+   float: left; 
+   width:150px ;
+   height: auto;
+
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+
+}
+.title{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #30ef63;
+    font-size: 70px;
+    border: solid rgb(213, 210, 210) ;
+}
+.button{
+    position:absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.btn{
+    border: 1px solid #d21919;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #3513af;
+    color: #999595; 
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="logo.jpg">
+                </div>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <div class="title">
+                <h1>BEAUTY OF NATURE</h1>
+            </div>
+            <div class="button">
+              <a href="#" class="btn">WATCH VIDEO</a>
+              <a href="#" class="btn">LEARN MORE</a>
+            </div>
         </header>
-        
-        <section>
-          <nav>
-            <ul>
-              <li><a href="#">Always Remember Us This Way (Lyrics) 🎵.mp3"</a></li><br>
-              <li><a href="#">ONE FRIEND.mp3</a></li><br>
-              <li><a href="#">Demons</a></li><br>
-              <li><a href="#">Take me home country road</a></li><br>
-                <li><a href="#">I dont wanna talk about</a></li><br>
-                <li><a href="#">Stuck on you</a></li><br>
-                <li><a href="#">Passenger seat</a></li><br>
-                <li><a href="#">Wonderful tonight</a></li><br>
-                <li><a href="#">Never thought that i could love</a></li><br>
-                <li><a href="#">Sometimes when we touch</a></li><br>
-                <li><a href="#">It might be you</a></li><br>
-                <li><a href="#">Miss kita</a></li><br>
-                <li><a href="#">Salamat</a></li><br>
-                <li><a href="#">With a smile</a></li><br>
-                <li><a href="#">Father and son</a></li>
-            </ul>
-          </nav>
-         
-          <article>
-            <audio controls> <source src="Always Remember Us This Way (Lyrics) 🎵.mp3" type="audio/mpeg"></audio>
-           <audio controls> <source src="ONE FRIEND.mp3" type="audio/mpeg"></audio> 
-            
-            
-          </article>
-        </section>
-
-
-     </body>
-</html>
-        
-  
-      
-      
-              
-      
-      
-  
-  
-        
+    </body>
+    </html>
